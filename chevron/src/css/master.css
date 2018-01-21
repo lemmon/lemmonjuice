@@ -1,15 +1,9 @@
+@import '../../../utils/css/-links';
 @import 'abrusco';
 
 svg {
   display: block;
   background-color: color(var(--black) alpha(10%));
-}
-
-.a {
-  display: block;
-  &-ul:hover {
-    box-shadow: 0 2px currentColor;
-  }
 }
 
 .input {

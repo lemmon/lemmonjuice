@@ -1,0 +1,7 @@
+.a {
+  display: block;
+  &-ul:hover,
+  &:hover &-ul {
+    box-shadow: 0 2px color(var(--lime) alpha(80%));
+  }
+}
