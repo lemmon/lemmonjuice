@@ -1,0 +1,58 @@
+@import 'abrusco';
+
+.a {
+  display: block;
+  &-ul:hover {
+    box-shadow: 0 2px currentColor;
+  }
+}
+
+.input {
+  appearance: none;
+  display: block;
+  width: 100%;
+  line-height: var(--field-lineheight);
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  background-color: var(--white, white);
+  border: var(--field-border-width) solid var(--field-border-color);
+  outline: 0 !important;
+  &:hover {
+    border-color: var(--field-border-color-hover);
+  }
+}
+
+.input {
+  min-width: 128px;
+  padding: var(--field-padding) calc(var(--font-size) - var(--field-border-width));
+  height: var(--field-height);
+  &[type=number] {
+    -moz-appearance: textfield;
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      appearance: none;
+      margin: 0;
+    }
+  }
+}
+
+.code {
+  border: var(--field-border-width) solid var(--field-border-color);
+  padding: calc(var(--font-size) - var(--field-border-width) - 3px) calc(var(--font-size) - var(--field-border-width));
+  white-space: pre-wrap;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+:root {
+  --field-height: 48px;
+  --field-border-width: 2px;
+  --field-border-color: var(--border-color, color(var(--black, black) alpha(20%)));
+  --field-border-color-hover: color(var(--black, black) alpha(50%));
+  --field-lineheight: 22px;
+  --field-padding: calc((var(--field-height) - var(--field-lineheight) - var(--field-border-width) * 2) / 2);
+  --field-accent: var(--link-color, var(--blue, blue));
+}

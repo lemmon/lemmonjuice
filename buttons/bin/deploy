@@ -1,0 +1,13 @@
+#!/bin/sh
+cd "$(dirname $0)/.."
+BASE_DIR=`pwd`
+
+password=$(<../.password)
+
+ftpsync \
+  -l develop \
+  -r sub/buttons \
+  -h 37.9.175.3 \
+  -u lemmonjuice.com \
+  -s $password \
+  -i .DS_Store

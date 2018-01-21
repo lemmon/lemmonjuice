@@ -1,0 +1,5 @@
+.DS_Store
+.password
+package-lock.json
+develop/
+node_modules/
