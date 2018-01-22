@@ -47,6 +47,7 @@ function render() {
   const width = val('width')
   const height = val('height')
   const thickness = val('thickness')
+  const gutter = val('gutter')
   const direction = document.forms[0].elements['direction'].value
   morph(DOM, html`
     <div class="canvas">
@@ -55,6 +56,7 @@ function render() {
           width,
           height,
           thickness,
+          gutter,
           direction,
         }))}" />
       </svg>
