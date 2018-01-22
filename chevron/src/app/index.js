@@ -6,23 +6,31 @@ const chevron = require('./chevron')
 const DOM = document.querySelector('.canvas')
 const code = document.querySelector('.code')
 
-document.forms[0].addEventListener('input', e => {
-  render()
+// handle rerender
+Array.from(document.forms[0].querySelectorAll('input[type=number]')).forEach(el => {
+  el.addEventListener('input', (e) => {
+    render()
+  })
+})
+Array.from(document.forms[0].querySelectorAll('input[type=radio]')).forEach(el => {
+  el.addEventListener('click', (e) => {
+    render()
+  })
 })
 // select all inputs on focus
-Array.from(document.forms[0].querySelectorAll('input')).forEach(link => {
-  link.addEventListener('focus', (e) => {
+Array.from(document.forms[0].querySelectorAll('input')).forEach(el => {
+  el.addEventListener('focus', (e) => {
     e.target.select()
   })
 })
 // select code on focus
-Array.from(document.forms[0].querySelectorAll('[tabindex]')).forEach(link => {
-  link.addEventListener('focus', (e) => {
+Array.from(document.forms[0].querySelectorAll('[tabindex]')).forEach(el => {
+  el.addEventListener('focus', (e) => {
     setTimeout(() => {
       window.getSelection().selectAllChildren(e.target)
     })
   })
-  link.addEventListener('mouseup', (e) => {
+  el.addEventListener('mouseup', (e) => {
     if (window.getSelection().type !== 'Range') {
       window.getSelection().selectAllChildren(e.target)
     }
