@@ -36,6 +36,10 @@ Array.from(document.forms[0].querySelectorAll('[tabindex]')).forEach(el => {
     }
   })
 })
+// download svg
+document.getElementById('svgDownload').addEventListener('click', e => {
+  e.target.setAttribute('href', 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(DOM.innerHTML.replace(/^(<svg)/, '$1 xmlns="http://www.w3.org/2000/svg"')))
+})
 
 render()
 
