@@ -1,3 +1,5 @@
+/* reset button */
+
 .button {
   display: block;
   appearance: none;
@@ -15,10 +17,13 @@
   }
 }
 
+/* apply custom styles */
+
 .button {
+  width: 100%;
   position: relative;
-  padding: 0 1rem;
-  height: var(--button-height);
+  z-index: 1;
+  cursor: pointer;
   &::before {
     content: '';
     display: block;
@@ -27,43 +32,109 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: color(#000 alpha(50%));
+    color: inherit;
+    background-color: transparent;
     border-radius: inherit;
     z-index: -1;
-    visibility: hidden;
-    opacity: 0;
-  }
-  &:focus,
-  &:hover {
-    color: var(--white, #fff);
-  }
-  &:focus::before,
-  &:hover::before {
-    visibility: visible;
-    opacity: 1;
   }
   &:focus {
-    box-shadow: 0 0 0 4px color(#000 alpha(10%));
+    &:not(:disabled) {
+      box-shadow: 0 0 0 4px color(#000 alpha(10%));
+    }
   }
+  &:hover,
+  &:focus,
+  &:active {
+    &:not(:disabled) {
+      color: color(#fff alpha(90%));
+    }
+  }
+  &-clear,
   &-outlined {
-    color: currentColor;
-    background-color: transparent;
-    box-shadow: inset 0 0 0 var(--button-border-width) currentColor;
-    &:not(:hover, :focus) {
+    &:not(:hover, :focus, :active), &:disabled {
       background-color: transparent;
     }
-    &:hover {
-      box-shadow: none;
+  }
+  &-outlined {
+    &:not(:hover, :focus, :active), &:disabled {
+      box-shadow: inset 0 0 0 var(--button-border-width) currentColor;
     }
   }
-  border-radius: var(--button-border-radius);
-  z-index: 1;
+  &-inverse {
+    &:hover,
+    &:focus,
+    &:active {
+      &:not(:disabled) {
+        color: color(#000 alpha(90%));
+      }
+    }
+    &:focus {
+      &:not(:disabled) {
+        box-shadow: 0 0 0 4px color(#fff alpha(10%));
+      }
+    }
+  }
+  &-darken {
+    &:focus,
+    &:hover {
+      &:not(:disabled) {
+        &::before {
+          border-color: transparent;
+          background-color: color(#000 alpha(20%));
+        }
+      }
+    }
+  }
+  &-lighten {
+    &:focus,
+    &:hover {
+      &:not(:disabled) {
+        &::before {
+          border-color: transparent;
+          background-color: color(#fff alpha(20%));
+        }
+      }
+    }
+  }
+  &:active {
+    &:not(:disabled) {
+      &::before {
+        border-color: transparent;
+        background-color: color(#000 alpha(50%));
+      }
+    }
+  }
+  &[data-loading]:disabled {
+    text-indent: -9999px;
+    cursor: progress;
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 1.5em;
+      height: 1.5em;
+      margin-left: -.75rem;
+      margin-top: -.75rem;
+      border: 2px solid;
+      border-color: currentColor currentColor transparent transparent;
+      border-radius: 100%;
+      animation: rotate .5s linear infinite;
+    }
+  }
+  &:disabled:not([data-loading]) {
+    cursor: not-allowed;
+    opacity: .5;
+    filter: grayscale(50%);
+  }
 }
 
 :root {
-  --button-height: var(--field-height, 48px);
   --button-border-width: var(--field-border-width, 2px);
-  --button-border-radius: 2px;
-  --button-padding: var(--field-padding, 1rem);
-  --button-padding: calc(var(--field-padding, 1rem) * 2);
+}
+
+@keyframes rotate {
+    0% { transform: rotateZ(-360deg); }
+  100% { transform: rotateZ(0deg); }
 }
