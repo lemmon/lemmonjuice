@@ -1,0 +1,6 @@
+#!/bin/sh
+cd "$(dirname $0)/.."
+BASE_DIR=`pwd`
+
+ftpcurl=$(<../.ftpcurl)
+curl -T "www/index.html" $ftpcurl

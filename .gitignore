@@ -1,5 +1,5 @@
 .DS_Store
-.password
+.ftpcurl
 package-lock.json
 develop/
 node_modules/
