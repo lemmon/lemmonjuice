@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "abrusco": "file:../node_modules_local/abrusco"
+    "abrusco": "^0.5.1"
   },
   "scripts": {
     "w": "abrusco src/css/master.css -o develop/master.css --watch"
