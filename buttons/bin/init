@@ -1,7 +1,0 @@
-#!/bin/sh
-cd "$(dirname $0)/.."
-BASE_DIR=`pwd`
-
-mkdir -pv develop
-ln -shv ../src/html/index.html develop/index.html
-ln -shv ../../develop/master.css develop/master.css

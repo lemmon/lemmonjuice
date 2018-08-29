@@ -1,8 +1,0 @@
-{
-  "devDependencies": {
-    "abrusco": "^0.5.1"
-  },
-  "scripts": {
-    "w": "abrusco src/css/master.css -o develop/master.css --watch"
-  }
-}
