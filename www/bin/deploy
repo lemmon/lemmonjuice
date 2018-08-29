@@ -2,16 +2,5 @@
 cd "$(dirname $0)/.."
 BASE_DIR=`pwd`
 
-password=$(<../.password)
-
-cp src/apache/htaccess.txt develop/.htaccess
-
-ftpsync \
-  -l develop \
-  -r web \
-  -h 37.9.175.3 \
-  -u lemmonjuice.com \
-  -s $password \
-  -i .DS_Store
-
-rm develop/.htaccess
+ftpcurl=$(<../.ftpcurl)
+curl -T "public/{index,404}.html" $ftpcurl
