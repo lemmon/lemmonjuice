@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "build:js": "babel-env src/index -o www/master.js",
+    "build": "npm run build:js",
+    "w:js": "npm run build:js -- --watch",
+    "w": "npm run w:js"
+  },
+  "babel": {
+    "comments": false
+  },
+  "browserslist": [
+    "IE 10"
+  ],
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 2017
+    }
+  }
+}
