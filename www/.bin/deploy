@@ -1,0 +1,6 @@
+#!/bin/sh
+cd "$(dirname $0)/.."
+
+ftpcurl=$(<../.ftpcurl)
+curl -T "public/index.php" $ftpcurl
+curl -T "public/404.html" $ftpcurl

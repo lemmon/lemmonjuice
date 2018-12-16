@@ -166,12 +166,12 @@
 
       <div class="p1">
         <ul class="grid grid2 sd-grid3 md-grid4 lh4">
-          <li class="p1">html/css<br><span class="color-black-40">15 years</span></li>
-          <li class="p1">javascript<br><span class="color-black-40">9 years</span></li>
-          <li class="p1">node.js<br><span class="color-black-40">3 years</span></li>
-          <li class="p1">graphql<br><span class="color-black-40">2 years</span></li>
-          <li class="p1">php/mysql<br><span class="color-black-40">15 years</span></li>
-          <li class="p1">mongodb<br><span class="color-black-40">5 years</span></li>
+          <li class="p1">html/css<br><span class="color-black-40"><?= date('Y') - 2003 ?> years</span></li>
+          <li class="p1">javascript<br><span class="color-black-40"><?= date('Y') - 2009 ?> years</span></li>
+          <li class="p1">node.js<br><span class="color-black-40"><?= date('Y') - 2015 ?> years</span></li>
+          <li class="p1">graphql<br><span class="color-black-40"><?= date('Y') - 2016 ?> years</span></li>
+          <li class="p1">php/mysql<br><span class="color-black-40"><?= date('Y') - 2003 ?> years</span></li>
+          <li class="p1">mongodb<br><span class="color-black-40"><?= date('Y') - 2013 ?> years</span></li>
           <li class="p1">linux</li>
           <li class="p1">git</li>
           <li class="p1">npm</li>

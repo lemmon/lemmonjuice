@@ -1,6 +1,0 @@
-#!/bin/sh
-cd "$(dirname $0)/.."
-BASE_DIR=`pwd`
-
-ftpcurl=$(<../.ftpcurl)
-curl -T "public/{index,404}.html" $ftpcurl
