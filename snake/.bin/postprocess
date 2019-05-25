@@ -1,0 +1,27 @@
+#!/usr/bin/env node
+
+const fs = require('fs')
+const path = require('path')
+
+// read file
+
+const file = path.resolve(__dirname, '../dist/index.html')
+let code = fs.readFileSync(file, 'utf8')
+
+// css
+
+code = code.replace(/( +?)<link rel="stylesheet" href="(build\/\w+\.css)">/g, (m, space, href) => {
+  const file = path.resolve(__dirname, '../dist', href)
+  return `${space}<style>\n${space}${fs.readFileSync(file, 'utf8')}\n${space}</style>`
+})
+
+// js
+
+code = code.replace(/( +?)<script src="(build\/\w+\.js)"><\/script>/g, (m, space, href) => {
+  const file = path.resolve(__dirname, '../dist', href)
+  return `${space}<script>\n${space}${fs.readFileSync(file, 'utf8')}\n${space}</script>`
+})
+
+// done
+
+fs.writeFileSync(file, code, 'utf8')

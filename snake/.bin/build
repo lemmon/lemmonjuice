@@ -1,0 +1,15 @@
+#!/bin/sh
+cd "$(dirname $0)/.."
+
+mkdir -v dist
+rm -rfv dist/*
+mkdir -v dist/build
+
+cp -v www/index.html dist
+
+abrusco src/css -o dist/build/master.css --minify
+babel-env src/app | minify > dist/build/bundle.js
+
+.bin/postprocess
+
+rm -rfv dist/build

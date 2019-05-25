@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "w:app": "babel-env src/app -o www/build/bundle.js --watch",
+    "w:css": "abrusco src/css -o www/build/master.css --watch",
+    "w": "npm run w:app & npm run w:css"
+  },
+  "browserslist": [
+    "Edge 15"
+  ],
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 2018
+    }
+  }
+}

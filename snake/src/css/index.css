@@ -1,0 +1,13 @@
+#app {
+  font-family: 'Menlo', 'Andale Mono', monospace;
+  font-size: 12px;
+  line-height: 16px;
+  white-space: pre;
+}
+
+.tile {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+}
