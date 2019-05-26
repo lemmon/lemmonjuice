@@ -1,6 +1,3 @@
-.DS_Store
-.ftpcurl
 deployment.*
-package-lock.json
 develop/
 node_modules/
