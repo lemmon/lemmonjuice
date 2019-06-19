@@ -10,9 +10,11 @@
 <body class="col justify-between sd-p1 max50">
 
   <header class="p1">
-    <div class="p1">
-      <h1 class="h2 lh4 fw600">lemmon juice</h1>
-      <p class="lh4 color-black-50">freelance web developer</p>
+    <div class="p075">
+      <h1 class="p025 h2 lh2 fw700">lemmon juice</h1>
+      <div class="p025">
+        <p class="lh4 color-black-50">freelance web developer</p>
+      </div>
     </div>
   </header>
 
