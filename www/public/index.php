@@ -44,10 +44,12 @@
           <h2 class="fw600 lh4"><a class="ul" href="http://uuid.lemmonjuice.com/">UUID</a></h2>
           <p class="lh4 color-black-80">Version 4 UUID online generator and microservice.</p>
         </article>
+        <?php /*
         <article class="p1">
-          <h2 class="fw600 lh4"><a class="ul" href="http://todo.lemmonjuice.com/">Todo</a></h2>
-          <p class="lh4 color-black-80">Yet another to-do list. Ongoing experiment, work in progress.</p>
+        <h2 class="fw600 lh4"><a class="ul" href="http://todo.lemmonjuice.com/">Todo</a></h2>
+        <p class="lh4 color-black-80">Yet another to-do list. Ongoing experiment, work in progress.</p>
         </article>
+        */ ?>
         <article class="p1">
           <h2 class="fw600 lh4"><a class="ul" href="https://github.com/lemmon/fetch-php">Fetch</a></h2>
           <p class="lh4 color-black-80">PHP implementation of the fetch() web api on top of Guzzle.</p>
