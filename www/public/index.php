@@ -5,7 +5,7 @@
   <title>lemmon juice &middot; freelance web developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="shortcut icon" href="https://www.lemmonjuice.com/favicon.ico">
-  <link rel="stylesheet" href="https://unpkg.com/abrusco@0.6.3/css/abrusco.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/abrusco@0.7.4/css/abrusco.min.css">
 </head>
 <body class="col justify-between sd-p1 max50">
 
