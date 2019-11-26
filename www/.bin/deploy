@@ -1,4 +1,13 @@
 #!/bin/sh
 cd "$(dirname $0)/.."
 
-deployment deployment.ini
+HOST=37.9.175.3
+USER=lemmonjuice.com
+PASS=$(security find-internet-password -s $HOST -a $USER -r ftps -w)
+
+ftpup \
+  -i '**/.DS_Store' \
+  -u ${USER} \
+  -p ${PASS} \
+  public \
+  ${HOST}/web
