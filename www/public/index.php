@@ -33,14 +33,21 @@
           <h2 class="fw600 lh4"><a class="ul" href="http://abrusco.com/">Abrusco</a></h2>
           <div class="lh4">
             <p class="color-black-80">Hackable CSS toolbox.</p>
-            <p class="color-black-40">atomic css, responsive, nodejs, open-source</p>
+            <p class="color-black-40">atomic css, responsive, node.js, open-source</p>
           </div>
         </article>
         <article class="p1">
           <h2 class="fw600 lh4"><a class="ul" href="https://github.com/lemmon/babel-env-cli">Babel Env CLI</a></h2>
           <div class="lh4">
             <p class="color-black-80">Command line interface for Babel + @babel/preset-env. Global installation.</p>
-            <p class="color-black-40">javascript, ecmascript, nodejs, babel, open-source</p>
+            <p class="color-black-40">javascript, ecmascript, node.js, babel, open-source</p>
+          </div>
+        </article>
+        <article class="p1">
+          <h2 class="fw600 lh4"><a class="ul" href="https://github.com/lemmon/ftpup">FTP Uploader</a></h2>
+          <div class="lh4">
+            <p class="color-black-80">Simple FTP uploader for node.js.</p>
+            <p class="color-black-40">ftp, deployment, node.js, cli, open-source</p>
           </div>
         </article>
         <article class="p1">
@@ -53,7 +60,7 @@
           </div>
           <div class="lh4">
             <p class="color-black-80">HTML form to email service.</p>
-            <p class="color-black-40">email, html, saas, nodejs, mongodb, serverless</p>
+            <p class="color-black-40">email, html, saas, node.js, mongodb, serverless</p>
           </div>
         </article>
         <article class="p1">
