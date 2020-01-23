@@ -165,6 +165,13 @@
             </div>
           </article>
           <article class="p1">
+            <h2 class="fw600 lh4"><a class="ul" target="_blank" href="https://www.nethost.cz/">Nethost</a></h2>
+            <div class="lh4">
+              <p class="color-black-80">September 2018&ndash;present, freelance</p>
+              <p class="color-black-40">html, css, javascript, php, mysql, linux</p>
+            </div>
+          </article>
+          <article class="p1">
             <h2 class="fw600 lh4"><a class="ul" target="_blank" href="https://www.prefis.com/">PREFIS</a></h2>
             <div class="lh4">
               <p class="color-black-80">January 2017&ndash;December 2018, freelance</p>
