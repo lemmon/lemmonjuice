@@ -114,7 +114,6 @@
             </div>
             <p class="lh4 color-black-80">Buttons extension for Abrusco CSS. Online generator.</p>
           </article>
-          */ ?>
           <article class="p1">
             <h2 class="fw600 lh4"><a class="ul" href="https://www.lemmonjuice.com/life/">Life</a></h2>
             <div class="lh4">
@@ -135,6 +134,7 @@
               <p class="color-black-40">javascript, <a class="a-ul" target="_blank" href="http://www.pixijs.com/">pixi</a>, html5, canvas, webgl</p>
             </div>
           </article>
+          */ ?>
         </div>
       </div>
 
