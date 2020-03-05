@@ -55,7 +55,6 @@
             <h2 class="fw600 lh4"><a class="ul" href="https://reform.email/">RE:FORM</a></h2>
             <aside class="pl025 row">
               <div class="ml025 f4 fw600 uc bg-black-10 color-black-40 py025 px025 br2">beta</div>
-              <div class="ml025 f4 fw600 uc bg-black-10 color-black-40 py025 px025 br2">work-in-progress</div>
             </aside>
           </div>
           <div class="lh4">
@@ -64,26 +63,8 @@
           </div>
         </article>
         <article class="p1">
-          <h2 class="fw600 lh4"><a class="ul" href="http://uuid.lemmonjuice.com/">UUID</a></h2>
-          <p class="lh4 color-black-80">Version 4 UUID online generator and microservice.</p>
-        </article>
-        <?php /*
-        <article class="p1">
-        <h2 class="fw600 lh4"><a class="ul" href="http://todo.lemmonjuice.com/">Todo</a></h2>
-        <p class="lh4 color-black-80">Yet another to-do list. Ongoing experiment, work in progress.</p>
-        </article>
-        */ ?>
-        <article class="p1">
           <h2 class="fw600 lh4"><a class="ul" href="https://github.com/lemmon/fetch-php">Fetch</a></h2>
           <p class="lh4 color-black-80">PHP implementation of the fetch() web api on top of Guzzle.</p>
-        </article>
-        <article class="p1">
-          <h2 class="fw600 lh4"><a class="ul" href="http://chevron.lemmonjuice.com/">Chevron</a></h2>
-          <p class="lh4 color-black-80">Online SVG chevron generator.</p>
-        </article>
-        <article class="p1">
-          <h2 class="fw600 lh4"><a class="ul" href="http://ribbon.lemmonjuice.com/">Ribbon</a></h2>
-          <p class="lh4 color-black-80">Online SVG ribbon generator.</p>
         </article>
       </div>
 
@@ -103,6 +84,24 @@
             <h2 class="fw600 lh4"><a class="ul" href="https://www.lemmonjuice.com/snake/">Snake</a></h2>
             <p class="lh4 color-black-80">Snake game in ASCII.</p>
             <p class="color-black-40">javascript, ascii</p>
+          </article>
+          <article class="p1">
+            <h2 class="fw600 lh4"><a class="ul" href="http://uuid.lemmonjuice.com/">UUID</a></h2>
+            <p class="lh4 color-black-80">Version 4 UUID online generator and microservice.</p>
+          </article>
+          <?php /*
+          <article class="p1">
+          <h2 class="fw600 lh4"><a class="ul" href="http://todo.lemmonjuice.com/">Todo</a></h2>
+          <p class="lh4 color-black-80">Yet another to-do list. Ongoing experiment, work in progress.</p>
+          </article>
+          */ ?>
+          <article class="p1">
+            <h2 class="fw600 lh4"><a class="ul" href="http://chevron.lemmonjuice.com/">Chevron</a></h2>
+            <p class="lh4 color-black-80">Online SVG chevron generator.</p>
+          </article>
+          <article class="p1">
+            <h2 class="fw600 lh4"><a class="ul" href="http://ribbon.lemmonjuice.com/">Ribbon</a></h2>
+            <p class="lh4 color-black-80">Online SVG ribbon generator.</p>
           </article>
           <?php /*
           <article class="p1">
