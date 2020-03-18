@@ -257,7 +257,7 @@
   </div></main>
 
   <div class="max51 px1 pb1 sd-px2 md-py1">
-    <hr class="div color-black-10 -box">
+    <hr class="div color-black-10">
   </div>
 
   <footer class="max51 py1 sd-px1 md-px2">
@@ -267,11 +267,11 @@
         var u = '%6a%70%65%6c%61%6b';
         var d = '%67%6d%61%69%6c';
         var t = '%63%6f%6d';
-        document.write('<a class="ul block -box" href=' + 'mail' + 'to:' + u + '%40' + d + '%2e' + t + '>' + 'Email' + '</a>');
+        document.write('<a class="ul" href=' + 'mail' + 'to:' + u + '%40' + d + '%2e' + t + '>' + 'Email' + '</a>');
         </script></li>
         <li class="px1 py05"><a class="ul" target="_blank" href="https://twitter.com/lemmon">Twitter</a></li>
         <li class="px1 py05"><a class="ul" target="_blank" href="https://github.com/lemmon">Github</a></li>
-        <li class="px1 py05"><a class="ul block -box" target="_blank" href="https://www.linkedin.com/in/jakubpelak/">LinkedIn</a></li>
+        <li class="px1 py05"><a class="ul" target="_blank" href="https://www.linkedin.com/in/jakubpelak/">LinkedIn</a></li>
         <!--
         <li class="p1"><a class="ul" target="_blank" href="https://navolnenoze.cz/prezentace/jakub-pelak/">Na Volné Noze</a></li>
         -->
