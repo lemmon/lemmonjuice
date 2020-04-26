@@ -1,9 +1,9 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>lemmon juice &middot; freelance web developer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="https://www.lemmonjuice.com/favicon.ico">
   <link rel="stylesheet" href="https://unpkg.com/abrusco@0.9.0/css/abrusco.min.css">
   <style media="screen">
