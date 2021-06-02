@@ -3,12 +3,13 @@ cd "$(dirname $0)/.."
 
 HOST=37.9.175.3
 USER=lemmonjuice.com
-DEST=/web
 PASS=$(security find-internet-password -s $HOST -a $USER -r ftps -w)
+DEST=web
+DIST=public
 
 ftpup \
-  -i '**/.DS_Store' \
-  -u ${USER} \
-  -p ${PASS} \
-  public \
-  ${HOST}${DEST}
+  --exclude '**/.DS_Store' \
+  --username ${USER} \
+  --password ${PASS} \
+  ${DIST} \
+  ${HOST}/${DEST}
