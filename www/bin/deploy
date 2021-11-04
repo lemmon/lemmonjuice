@@ -1,7 +1,7 @@
 #!/bin/sh
 cd "$(dirname $0)/.."
 
-HOST=37.9.175.3
+HOST=lemmonjuice.com
 USER=lemmonjuice.com
 PASS=$(security find-internet-password -s $HOST -a $USER -r ftps -w)
 DEST=web
