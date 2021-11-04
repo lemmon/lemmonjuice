@@ -191,24 +191,24 @@
 
         <div class="md-grid md-grid2">
           <article class="p1">
+            <h2 class="fw600 lh4"><a class="ul" target="_blank" href="https://www.nethost.cz/">Nethost</a></h2>
+            <div class="lh4">
+              <p class="color-black-80">September 2018&ndash;present, freelance</p>
+              <p class="color-black-40">html, css, javascript, php, mysql, linux</p>
+            </div>
+          </article>
+          <article class="p1">
             <h2 class="fw600 lh4"><a class="ul" target="_blank" href="https://www.eyca.org/">European Youth Card Association</a></h2>
             <div class="lh4">
-              <p class="color-black-80">March 2010&ndash;present, freelance</p>
+              <p class="color-black-80">March 2010&ndash;February 2020, freelance</p>
               <p class="color-black-40">html, css, node.js, mongodb, graphql, php</p>
             </div>
           </article>
           <article class="p1">
             <h2 class="fw600 lh4"><a class="ul" target="_blank" href="https://www.eset.com/">ESET</a></h2>
             <div class="lh4">
-              <p class="color-black-80">October 2013&ndash;present, freelance</p>
+              <p class="color-black-80">October 2013&ndash;February 2020, freelance</p>
               <p class="color-black-40">html, css, javascript, php</p>
-            </div>
-          </article>
-          <article class="p1">
-            <h2 class="fw600 lh4"><a class="ul" target="_blank" href="https://www.nethost.cz/">Nethost</a></h2>
-            <div class="lh4">
-              <p class="color-black-80">September 2018&ndash;present, freelance</p>
-              <p class="color-black-40">html, css, javascript, php, mysql, linux</p>
             </div>
           </article>
           <article class="p1">
