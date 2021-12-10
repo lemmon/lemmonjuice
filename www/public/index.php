@@ -30,6 +30,9 @@
     flex: 4;
   }
   </style>
+  <?php if ('www.lemmonjuice.com' === $_SERVER['SERVER_NAME']): ?>
+  <script defer data-domain="lemmonjuice.com" src="https://plausible.io/js/plausible.js"></script>
+  <?php endif ?>
 </head>
 <body class="col max80 py1 mx">
 
